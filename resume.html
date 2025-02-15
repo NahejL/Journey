@@ -1,0 +1,238 @@
+<html style="
+	position: fixed; inset: 0px;
+	width: 100vw; height: 100vh;
+	display: grid; grid: 100% / 100%;
+	place-content: stretch; place-items: center;
+	--family-sans: Arial;
+	--family-with: Times New Roman;
+	" >
+
+<style>
+	
+	.sup-header {
+		font-size: 20pt;
+		font-weight: 600;
+		font-family: var(--family-sans);
+		letter-spacing: .5px;
+		}
+
+	.header {
+		padding-block: .2in .1in;
+		font-size: 16pt;
+		font-weight: 600;
+		font-family: var(--family-sans);
+		letter-spacing: .5px;
+		}
+
+	.sub-header {
+		padding-block: 0 .1in;
+		font-size: 14pt;
+		font-weight: 600;
+		font-family: var(--family-sans);
+		letter-spacing: .5px;
+		}
+
+	.paragraph {
+		padding-left: .1in;
+		font-size: 12pt;
+		line-height: 1.2;
+		font-family: var(--family-with);
+		letter-spacing: .2px;
+		font-weight: 400;
+		}
+
+	.list-item {
+		font-size: 12pt;
+		line-height: 1.2;
+		font-family: var(--family-with);
+		}
+
+	.list-item::before {
+		content: "•";
+		display: inline grid;
+		width: 1em;
+		place-content: start;
+		}
+
+	.contact-item {
+		font-family: monospace;
+		font-size: 10pt;
+		line-height: 1.4;
+		}
+/*
+	.contact-item::before {
+		content: "• ";
+		white-space: pre;
+		}*/
+
+	.entry {
+		display: grid; grid: min-content auto-flow / auto min-content;
+		}
+
+	.entry-header {
+		grid-area: 1/1;
+		width: 100%;
+		display: flex; flex-flow: column;
+		font-family: var(--family-sans);
+		}
+
+	.entry-aside {
+		grid-area: 1/2; place-self: start end;
+		width: min-content;
+		text-wrap: nowrap;
+		}
+
+	.entry-point {
+		grid-column: 1/3;
+		padding-block: .6em 0;
+		padding-left: .8em;
+    text-indent: -.6em;
+		}
+
+/*	.entry-point::before {
+		content: "• ";
+		white-space: pre;
+		}*/
+
+	.sub-sub-header {
+		padding-block: .1in;
+		font-size: 12pt;
+		font-weight: 600;
+		font-family: var(--family-sans);
+		letter-spacing: .5px;
+		}
+
+	</style>
+
+<body style="
+	margin: 0; 
+	box-shadow: 0 0 8px 0px #000;
+	width: 8.5in; height: 11in;
+	display: grid; grid: 
+		'a b' min-content 
+		'c d' auto 
+		/ 8fr 5fr;
+	place-content: stretch;
+	--page-pad: .5in;
+	--page-gap: .15in;
+	" >
+
+	<top- style="
+		grid-area: a/a / b/b;
+		padding: var(--page-pad) var(--page-gap) var(--page-gap) var(--page-pad); 
+		" >
+		<name- class=sup-header >Nahej Lefebvre</name->	
+		</top->
+		
+	<right- style="
+		grid-area: b/b / d/d;
+		display: grid; grid: subgrid / auto;
+		background: #234; color: #FFF
+		" >
+			
+		</right->	
+
+	<left-content style="
+		grid-area: c;
+		padding: 0 var(--page-gap) var(--page-pad) var(--page-pad);
+		display: flex; flex-flow: column nowrap;
+		" >
+
+		<p- class=paragraph >Aspiring developer committed to enhancing commerce and eager to join Shopify's Dev Degree program for professional and personal growth. With a strong foundation in computer science, I thrive in fast-paced environments and embrace learning and growth through curiosity and overcoming challenges.</p->
+
+		<p- class=header >Education</p->		
+
+		<p- class="entry paragraph" >
+			<p- class=entry-header >
+				<p- style="font-weight: 600; padding-bottom: .2em;" 
+					>CONESTOGA COLLEGE</p->
+				<p->Computer Programmer & Analyst</p->
+				</p->
+			<p- class=entry-aside >
+				Kitchener, ON </br>
+				2018 - 2020
+				</p->	
+			<p- class=entry-point >Data Structures and Algorithms</p->
+			<p- class=entry-point >Mobile App Development</p->
+			<p- class=entry-point >Database Management Systems</p->
+			<p- class=entry-point >Software Security and Privacy</p->
+			</p->
+		
+		<p- class=header >Experience</p->
+
+		<!-- <p- class=sub-header >Startups</p-> -->
+		<p- class="entry paragraph" >
+			<p- class=entry-header >
+				<p- style="font-weight: 600; padding-bottom: .2em;" 
+					>Startup / Stelo.Space</p->
+				<p->Front-End Developer</p->
+				</p->
+			<p- class=entry-aside >
+				Kitchener, ON </br>
+				2018 - 2020
+				</p->	
+			<!-- <p- class=entry-point ><i>Developed Social Media Platform:</i> Led the development of a high-performance social media application for iOS and Android, ensuring seamless user experience.</p->
+			<p- class=entry-point ><i>Collaboration and Communication:</i> Worked with designers, backend developers, and stakeholders to define and deliver new features.</p->
+			<p- class=entry-point ><i>User Feedback:</i> Gathered and analyzed user feedback to identify areas for improvement and implement necessary changes.</p-> -->
+			<p- class=entry-point ><i>Developed Twitter-like Social Media App:</i> Led the development of a high-performance social media application for iOS and Android, ensuring seamless user experience.</p->
+			<p- class=entry-point ><i>Collaborated with Cross-Functional Teams:</i> Worked with designers, backend developers, and stakeholders to define and deliver new features.</p->
+			<p- class=entry-point ><i>Gathered and Analyzed User Feedback:</i> Communicated with stakeholders to identify areas for improvement and implement necessary changes.</p->
+			</p->
+		</br>
+		<p- class="entry paragraph" >
+			<p- class=entry-header >
+				<p- style="font-weight: 600; padding-bottom: .2em;" 
+					>Freelance</p->
+				<p->Full-Stack Developer</p->
+				</p->
+			<p- class=entry-aside >
+				Kitchener, ON </br>
+				2020 - 2021
+				</p->	
+			<p- class=entry-point ><i>Collaborated with Clients:</i> Understood client needs, gathered requirements, and delivered customized web solutions.</p->
+			<p- class=entry-point ><i>Managed Projects:</i> Coordinated multiple projects simultaneously, ensuring timely delivery within budget constraints.</p->
+			<p- class=entry-point ><i>Implemented E-commerce Features:</i> Integrated shopping carts, payment gateways, and product management systems to enhance client businesses.</p->
+			</p->
+
+
+		</left-content>
+
+	<right-content style="
+		grid-area: d;
+		padding: 0 var(--page-pad) var(--page-pad) var(--page-gap);
+		display: flex; flex-flow: column nowrap;
+		color: #FFF
+		" >
+
+		<p- class=contact-item >nahejlefebvre@gmail.com</p->
+		<p- class=contact-item >226 752 8867</p->
+		<p- class=contact-item >linkedin.com/in/nahej-lefebvre</p->
+		<p- class=contact-item >github.com/NahejL</p->
+
+		<p- class=header >Technologies</p->
+		<p- class=sub-sub-header>Languages:<p- class=paragraph >Ruby, Rust, JS, HTML/CSS, Dart, Java/Kotlin & WGSL.</p-> </p->
+		<p- class=sub-sub-header>Frameworks:<p- class=paragraph >Ruby on Rails, Node.js, React, Vue & Svelte.</p-> </p->
+		<p- class=sub-sub-header>Web APIs:<p- class=paragraph >GraphQL, WebAssembly, WebGL/WebGPU, IndexedDB & WebSocket.</p-> </p->
+		<p- class=sub-sub-header>Platforms:<p- class=paragraph >AWS, GCP, Linux & CLR.</p-> </p->
+		
+
+		<p- class=header >Engagement</p->
+
+		<p- class="entry paragraph" >
+
+			<p- class=entry-point ><i>Shopify Meetup Speaker:</i></br> Presented the technical intricacies and performance advantages of Flutter's rendering engine.</p-> <!-- Delivered an insightful presentation at a Shopify Meetup, showcasing the technical intricacies and performance advantages of Flutter's rendering engine.</p-> -->
+			
+			<p- class=entry-point ><i>Hackathon Winner:</i></br> Worked in a team of 7 and won Conestoga College's 4x4 hackathon. </p-> <!--Worked in a team of 7 to victory in a hackathon hosted by Conestoga College, demonstrating strong teamwork, problem-solving skills, and innovative thinking.</p-> -->
+			
+			<p- class=entry-point ><i>Active Hackathon Participant:</i></br> Took part in multiple hackathons, including ConUHacks. </p-> <!-- Regularly participated in hackathons, including ConUHacks, where I honed my coding skills, collaborated with peers, and tackled real-world challenges.</p-> -->
+			
+			<p- class=entry-point ><i>Hackernest Member:</i></br> Regularly attended and participated in Hackernest gatherings. </p-> <!-- ngaged as a regular member of Hackernest meetups, contributing to the tech community, networking with professionals, and staying updated on industry trends.</p-> -->
+
+		</p->
+
+		</right-content>
+
+
+	</body>
+
+	</html>
