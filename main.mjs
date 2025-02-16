@@ -590,6 +590,8 @@ class DraggableViewMixin extends AbstractEquivicativeMixinBase {
 		let { element } = candidate
 			, cursor
 
+		element.style.touchAction = "none"
+
 		element.addEventListener( "pointerdown", event => {
 			if( event.target !== element )
 				return
