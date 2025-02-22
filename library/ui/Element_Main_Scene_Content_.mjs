@@ -16,7 +16,7 @@ export default class Element_Main_Scene_Content_ {
 		}
 
 	get #styles() { return {
-		display: "grid", grid: "auto-flow minmax( min-content, 30px ) / auto minmax( min-content, 30px )",
+		display: "grid", grid: "auto-flow minmax( 30px, min-content ) / auto minmax( 30px, min-content )",
 		background: `radial-gradient( circle at 80% 80%, #FFF3 0%, #FFF0 80% )`,
 		} }
 
@@ -28,7 +28,6 @@ export default class Element_Main_Scene_Content_ {
 
 		let element = this.element = Element.fromTagName `main-scene-content`
 		element.style.setProperties( this.#styles )
-
 
 		element.append(
 			Element_SceneObject_.getInstance(0).element,
