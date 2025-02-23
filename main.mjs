@@ -1,17 +1,13 @@
 
-import Singleton from "./library/Singleton.mjs"
-import Frozen from "./library/Frozen.mjs"
-import "./library/Element.mjs"
-import "/library/CSSStyleDeclaration.mjs"
-import Element_Main_Frame_ from "/library/ui/Element_Main_Frame_.mjs"
+import "./apps/render.mjs"
 
 /** Naming:
  * <Scope> + ...<Specifier> + <Super>
- * eg: Element_Header_Background_
+ * eg: Element_Header_Background_Store
  * where:
- * 	- Element: class of the bound-lifetime-object (aka Scope) of an instance of that class.
+ * 	- Scope: Identifier of that which strongly holds onto this.
  *  - Specifier: mixins, interfaces, traits, ... that the class abides by.
- *  - Super: class/typeof held value by an instance of that class
+ *  - Super: Identifier of that which is strongly held by this.
  **/
 
 /** TO DO:
@@ -27,9 +23,8 @@ class _Body_ {
 			letterSpacing: "1px",
 			})
 
-		document.body.append( Element_Main_Frame_.instance.element )
-		
-		Frozen.define( this )
+
+
 		}
 	}
 
