@@ -1,7 +1,7 @@
 
 import { ChalkBoardElement } 
 	from "./module.mjs"
-import { MenuIconElement, SubMenuElement, MenuGroupElement, MenuItemElement }
+import { ContextMenuElement, MenuItemElement, MenuElement }
 	from "./module.mjs"
 
 // define menu types
@@ -107,19 +107,19 @@ export default class GraphEditorElement extends HTMLElement {
 		shadow.append( 
 			chalkBoard, 
 			HTMLSlotElement.create({ name: "graph" }),
-			MenuIconElement.create({},
-				SubMenuElement.create({ label: "Graph" },
-					MenuItemElement.create({ label: "Find", keys: "⌘F" }),
-					MenuGroupElement.create({ label: "New", keys: "⌘N" },
-						MenuItemElement.create({ label: "Node" }),
-						MenuItemElement.create({ label: "Edge" }),
-						MenuItemElement.create({ label: "View" }),
-						MenuItemElement.create({ label: "Rule" }),
-						),
-					),
-				SubMenuElement.create({ label: "Node" }),
-				SubMenuElement.create({ label: "Edge" }),
-				)
+			ContextMenuElement.create({ id: "graph-context-menu" },
+        MenuItemElement.create({ label: "Find", keys: "" }),
+        MenuItemElement.create({ label: "Add" },
+          MenuElement.create({ label: "Node" }),
+          MenuElement.create({ label: "Edge" }),
+          ),
+				),
+      ContextMenuElement.create({ id: "node-context-menu" },
+        MenuItemElement.create({ label: "Delete", keys: "" }),
+        ),
+      ContextMenuElement.create({ id: "edge-context-menu" },
+        MenuItemElement.create({ label: "Delete", keys: "" }),
+        ),
 			)
 
 		}

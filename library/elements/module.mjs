@@ -10,14 +10,21 @@ export { default as RenderNodeElement }
 export { default as ChalkBoardElement } 
 	from "./chalk-board.mjs"
 
-export { default as MenuIconElement }
-	from "./menu-icon.mjs"
-export { default as SubMenuElement }
-	from "./sub-menu.mjs"
-export { default as MenuGroupElement }
-	from "./menu-group.mjs"
+export { default as ContextMenuElement }
+	from "./context-menu.mjs"
 export { default as MenuItemElement }
 	from "./menu-item.mjs"
+export { default as MenuElement }
+	from "./menu-.mjs"
+
+// export { default as MenuIconElement }
+// 	from "./menu-icon.mjs"
+// export { default as SubMenuElement }
+// 	from "./sub-menu.mjs"
+// export { default as MenuGroupElement }
+// 	from "./menu-group.mjs"
+// export { default as MenuItemElement }
+// 	from "./menu-item.mjs"
 
 // export { default as HandleBarElement } 
 // 	from "./handle-bar.mjs"
