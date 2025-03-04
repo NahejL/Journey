@@ -16,8 +16,9 @@ const sheet = `
 		--size: calc( 20px * var(--dilation, 1 ) );
 		background-size: var(--size) var(--size), var(--size) var(--size);
 		background-image:
-			radial-gradient( circle at center, #000 1px, #0000 1px ),
-			radial-gradient( circle at center, #000 1px, #0000 1px );
+			radial-gradient( circle at center, #AAA 1px, #0000 1px ),
+			radial-gradient( circle at center, #AAA 1px, #0000 1px );
+		background-color: #000;
 		cursor: grab; 
 		pointer-events: auto;
 		user-select: none;

@@ -13,7 +13,11 @@ const sheet = `
 		box-shadow: 0px 1px 2px -1px #000;
 		border-radius: 6px;
 		background: #FFF;
+		transition: box-shadow .3s ease-out;
 		--name: attr(name);
+		}
+	:host:has(node-header.grabbing) {
+		box-shadow: 1px 2px 4px -1px #000;
 		}
 	node-header {
 		width: 100%; min-height: 30px;
