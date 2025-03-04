@@ -4,6 +4,8 @@ import { ChalkBoardElement }
 import { MenuIconElement, SubMenuElement, MenuGroupElement, MenuItemElement }
 	from "./module.mjs"
 
+// define menu types
+
 const sheet = `
 	/* index === 0 */
 	:host {
